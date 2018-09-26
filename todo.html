@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>TO DO PAGE</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="pscript.js"></script>
+	</head>
+
+
+	<body>
+
+		<div class="navigation">
+			
+			<a href="imagesv1.html"> Some Inspirational Images</a>
+			<a href="about.html"> about this site</a>
+			<a class="active" href="todo.html" > TO DO List</a> 
+
+		</div>
+		<br>
+		<br>
+		<br>	
+
+		<h1> TO DO LIST </h1>
+		<p> In order to help stay on track with everything you have going on please make use of our To Do list tool! Simply just type in the task, deadline, and category of the task.</p>
+
+
+		<ul class="categories">
+			<li>School</li>
+			<li>Work</li>
+			<li>liesure</li>
+			<li>Chores</li>
+		</ul>
+
+
+		<div id="inputbox">
+			<h2>Enter Your Task Here</h2>
+			<form>
+				<input type="text" id="descriptionIN" name="descriptioninput" placeholder="Task Description">	
+				<input type="datetime-local" name="datetimeinput" id="datetimeIN">
+				<select id="categoryIN">
+					<option value="School">School</option>
+					<option value="Work">Work</option>
+					<option value="Liesure">Liesure</option>
+					<option value="Chores">Chores</option>
+				</select>
+				<button type="button" onclick="addtask()">Add Task</button>
+				
+			</form>
+
+			
+		</div>
+
+		
+		<table id="faketable">
+			<tr>
+				<td>Description</td>
+				<td>|</td>
+				<td>Category</td>
+				<td>|</td>
+				<td>Due Date and Time</td>
+				<td><h3>Sortby:</h3></td>
+				<td><button type="button" onclick="sort(1)">Category</button></td>
+				<td><button type="button" onclick="sort(2)">Deadline</button></td>
+				<td><button type="button" onclick="sort(3)">time posted</button></td>
+			</tr>
+
+		</table>
+
+		<div id="todotable">
+
+		<table id="todolist" class="todolist">
+			
+		</table> 
+		</div>
+
+		
+		
+
+	</body>
+
+	<script src="pscript.js"></script>
+</html>
